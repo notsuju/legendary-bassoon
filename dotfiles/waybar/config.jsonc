@@ -1,0 +1,92 @@
+{
+    "layer": "top",
+    "position": "top",
+    "mod": "dock",
+    "font-weight": "normal",
+    "gtk-layer-shell": "true",
+    "exclusive": true,
+    "passtrough": false,
+    "height": 10,
+    "modules-left": [
+        "custom/arch",
+        "custom/spotify"
+    ],
+    "modules-center": ["hyprland/workspaces"],
+    "modules-right": [
+        "tray",
+        "network",
+        "battery",
+        "pulseaudio",
+        "clock",
+        "custom/powermenu"
+    ],
+    "custom/arch": {
+        "format":"  ",
+      "tooltip": false,
+      "on-click": "tofi-drun"
+    },
+    "custom/powermenu": {
+        "format":" ⏻ ",
+      "tooltip": false,
+      "on-click": "~/.config/hypr/powermenu.sh"
+    },
+    "battery": {
+      "bat": "BAT0",
+      "format-charging": "󰚥",
+      "adapter": "ADP0",
+      "interval": 1,
+      "states": {
+          "warning": 30,
+          "critical": 15
+      },
+      "max-length": 20,
+      "format": "{icon}",
+      "format-warning": "{icon}",
+      "format-critical": "{icon}",
+
+      "format-alt": "{icon} {time}",
+      "format-full": "   ",
+      "format-icons": ["   ", "   ", "   ", "   ", "   "]
+    },
+"hyprland/workspaces": {
+        "disable-scroll": false,
+        "all-outputs": true,
+        "on-scroll-up": "hyprctl dispatch workspace e+1",
+		"on-scroll-down": "hyprctl dispatch workspace e-1",
+        "on-click": "activate",
+        "format": "{icon}",
+     },
+    "tray": {
+        "icon-size": 13,
+        "tooltip": false,
+        "spacing": 10
+    },
+    "custom/spotify": {
+        "exec": "/usr/bin/python3 ~/.config/waybar/modules/spotify.py --player spotify",
+        "format": " {}",
+        "return-type": "json",
+        "on-click": "playerctl play-pause",
+        "on-scroll-up": "playerctl next",
+        "on-scroll-down": "playerctl previous"
+    },
+"pulseaudio": {
+        "format": "{icon}",
+        "format-muted": " 󰖁 ",
+        "format-icons": {
+            "default": ["  ", "  ", "  "]
+        },
+        "on-click": "pavucontrol &"
+    },
+
+"network": {
+        /* "format-wifi": "直", */
+        "format-wifi": " {icon}",
+        "format-ethernet": " ",
+        "format-disconnected": "睊",
+        "tooltip-format": "{essid}",
+        "on-click": "~/.config/rofi/nm-applet/rofi-network-manager.sh",
+        "format-icons": ["󰤯 ","󰤟 ","󰤢 ","󰤢 ","󰤨 "],
+    },
+}
+
+
