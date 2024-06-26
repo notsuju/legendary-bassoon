@@ -35,6 +35,14 @@
 + strawberry : Arch wiki
 + yazi : `sudo pacman -S yazi ffmpegthumbnailer unarchiver jq poppler fd ripgrep fzf zoxide`
 + ranger : Arch wiki
++ tock : terminal digital clock
++ gnome-clocks : Arch wiki
++ thunar : Arch wiki
++ swaylock : Arch wiki
++ tofi
++ nwg-look-bin : Arch linux (gtk theme)
++ catppuccin-themes-gtk-mocha
++ 
 
 ## Update
 
