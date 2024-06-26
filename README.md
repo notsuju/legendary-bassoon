@@ -43,6 +43,7 @@
 + nwg-look-bin : Arch linux (gtk theme)
 + catppuccin-themes-gtk-mocha
 + uwufetch
++ tlp : Arch wiki (/etc/tlp.conf) [start it by: systemctl start tlp.service]
 
 ## Update
 
