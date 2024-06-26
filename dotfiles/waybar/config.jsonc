@@ -1,92 +1,151 @@
 {
-    "layer": "top",
     "position": "top",
-    "mod": "dock",
-    "font-weight": "normal",
-    "gtk-layer-shell": "true",
-    "exclusive": true,
-    "passtrough": false,
-    "height": 10,
+    "height": 30,
+    "width": 1890,
+    "spacing": 0,
+    "margin-bottom": 14,
     "modules-left": [
-        "custom/arch",
-        "custom/spotify"
-    ],
-    "modules-center": ["hyprland/workspaces"],
-    "modules-right": [
-        "tray",
-        "network",
-        "battery",
+        "idle_inhibitor",
+        "custom/separator",
+        "power-profiles-daemon",
+        "sway/workspaces",
+        "sway/mode", // disappears, adding left separator in format
+        "sway/scratchpad", // disappears, adding left separator in format
+        "custom/separator",
         "pulseaudio",
-        "clock",
-        "custom/powermenu"
+        "custom/separator",
+        "custom/yearprogress"
     ],
-    "custom/arch": {
-        "format":"  ",
-      "tooltip": false,
-      "on-click": "tofi-drun"
+    "modules-center": [
+        "mpris"
+    ],
+    "modules-right": [
+        "network",
+        "custom/separator",
+        // "cpu",
+        // "memory",
+        "temperature",
+        "backlight",
+        "custom/separator",
+        "sway/language",
+        "custom/separator",
+        // "keyboard-state",
+        // "custom/separator",
+        "battery",
+        "custom/separator",
+        "clock"
+        // "tray"
+    ],
+    "sway/mode": {
+        "format": " / {}"
     },
-    "custom/powermenu": {
-        "format":" ⏻ ",
-      "tooltip": false,
-      "on-click": "~/.config/hypr/powermenu.sh"
+    "sway/scratchpad": {
+        "format": " / count: {count}",
+        "show-empty": false,
+        "tooltip": true,
+        "tooltip-format": "{app}: {title}"
     },
-    "battery": {
-      "bat": "BAT0",
-      "format-charging": "󰚥",
-      "adapter": "ADP0",
-      "interval": 1,
-      "states": {
-          "warning": 30,
-          "critical": 15
-      },
-      "max-length": 20,
-      "format": "{icon}",
-      "format-warning": "{icon}",
-      "format-critical": "{icon}",
-
-      "format-alt": "{icon} {time}",
-      "format-full": "   ",
-      "format-icons": ["   ", "   ", "   ", "   ", "   "]
-    },
-"hyprland/workspaces": {
-        "disable-scroll": false,
-        "all-outputs": true,
-        "on-scroll-up": "hyprctl dispatch workspace e+1",
-		"on-scroll-down": "hyprctl dispatch workspace e-1",
-        "on-click": "activate",
+    "idle_inhibitor": {
         "format": "{icon}",
-     },
+        "format-icons": {
+            "activated": "awake",
+            "deactivated": "dizzy"
+        }
+    },
     "tray": {
-        "icon-size": 13,
-        "tooltip": false,
+        // "icon-size": 21,
         "spacing": 10
     },
-    "custom/spotify": {
-        "exec": "/usr/bin/python3 ~/.config/waybar/modules/spotify.py --player spotify",
-        "format": " {}",
-        "return-type": "json",
-        "on-click": "playerctl play-pause",
-        "on-scroll-up": "playerctl next",
-        "on-scroll-down": "playerctl previous"
+    "clock": {
+        // "timezone": "America/New_York",
+        "format": "{:%a, %b%d %H:%M}",
+        "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
+        "format-alt": "{:%Y/%m/%d}"
     },
-"pulseaudio": {
-        "format": "{icon}",
-        "format-muted": " 󰖁 ",
-        "format-icons": {
-            "default": ["  ", "  ", "  "]
+    "cpu": {
+        "format": "cpu: {usage}%",
+        "tooltip": false
+    },
+    "memory": {
+        "format": "memory: {}%"
+    },
+    "temperature": {
+        // "thermal-zone": 2,
+        // "hwmon-path": "/sys/class/hwmon/hwmon2/temp1_input",
+        "critical-threshold": 60,
+        "format-critical": "CRITICAL: {temperatureC}°C",
+        "format": "temp: {temperatureC}°C",
+    },
+    "backlight": {
+        "scroll-step": 5,
+        "format": "brightness: {percent}%",
+    },
+    "battery": {
+        "states": {
+            //"good": 95,
+            "warning": 30,
+            "critical": 10
         },
-        "on-click": "pavucontrol &"
+        "format": "power: {capacity}%",
+        "format-full": "full: {capacity}%",
+        "format-charging": "charging: {capacity}%",
+        "format-plugged": "plugged: {capacity}%",
+        "format-alt": "time: {time}",
+        "interval": 5
+        //"format-good": "", // An empty format will hide the module
     },
-
-"network": {
-        /* "format-wifi": "直", */
-        "format-wifi": " {icon}",
-        "format-ethernet": " ",
-        "format-disconnected": "睊",
-        "tooltip-format": "{essid}",
-        "on-click": "~/.config/rofi/nm-applet/rofi-network-manager.sh",
-        "format-icons": ["󰤯 ","󰤟 ","󰤢 ","󰤢 ","󰤨 "],
+    "battery#bat2": {
+        "bat": "BAT2"
     },
+    "power-profiles-daemon": {
+      "format": "{profile}",
+      "tooltip-format": "Power profile: {profile}\nDriver: {driver}",
+      "tooltip": true
+    },
+    "network": {
+        "format-wifi": "wifi: {essid}",
+        "format-ethernet": "eth: {ipaddr}/{cidr}",
+        "tooltip-format": "{ifname} via {gwaddr}",
+        "format-linked": "{ifname} (No IP)",
+        "format-disconnected": "disconnected",
+        "format-disabled": "disabled"
+    },
+    "mpris": {
+        "format": "{artist} - {title}",
+        "format-paused": "{artist} - {title}",
+        "max-length": 40,
+        "interval": 1
+    },
+    "pulseaudio": {
+        "scroll-step": 5, // %, can be a float
+        "format": "audio: {volume}% {format_source}",
+        "format-bluetooth": "bt: {volume}% {format_source}",
+        "format-bluetooth-muted": "btmuted: {format_source}",
+        "format-muted": "muted {format_source}",
+        "format-source": "mic: {volume}%",
+        "format-source-muted": "micmuted",
+        "max-volume": 150,
+        "on-click": "pavucontrol"
+    },
+    "sway/language": {
+        "format": {},
+        "on-click": "swaymsg input type:keyboard xkb_switch_layout next"
+    },
+    "keyboard-state": {
+        "numlock": true, "capslock": true,
+        "format": {
+            "numlock": "N",
+            "capslock": "C"
+        }
+    },
+    "custom/yearprogress": {
+        "format": "year progress: {}",
+        "exec": "~/.config/waybar/yearprogress.sh",
+        "interval": 300
+    },
+    "custom/separator": {
+        "format": " / ",
+        "tooltip": false
+    },
+    "reload_style_on_change": true
 }
-
-
