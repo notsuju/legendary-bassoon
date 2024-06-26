@@ -42,7 +42,7 @@
 + tofi
 + nwg-look-bin : Arch linux (gtk theme)
 + catppuccin-themes-gtk-mocha
-+ 
++ uwufetch
 
 ## Update
 
