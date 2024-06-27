@@ -44,6 +44,9 @@
 + catppuccin-themes-gtk-mocha
 + uwufetch
 + tlp : Arch wiki (/etc/tlp.conf) [start it by: systemctl start tlp.service]
++ libreOffice : Arch wiki
++ Themix/Oomox theme designer : Arch wiki
++ Cmake
 
 ## Update
 
