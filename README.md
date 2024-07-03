@@ -49,6 +49,8 @@
 + libreOffice : Arch wiki
 + Themix/Oomox theme designer : Arch wiki
 + Cmake
++ ncmpcpp and mpd : Arch wiki
++ bluez and bluez-utils : Arch wiki(bluetoothctl)
 
 ## Update
 
