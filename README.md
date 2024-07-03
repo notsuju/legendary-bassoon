@@ -10,7 +10,7 @@
 ![swappy-20240627-122837](https://github.com/notsuju/legendary-bassoon/assets/131643792/0ca3ddb9-3daf-48a8-b199-dcf4c110ea41)
 
 
-## Programs used
+## Packages
 
 + Spicetify : Arch wiki (https://spicetify.app/docs/advanced-usage/installation/)
 + Firefox
