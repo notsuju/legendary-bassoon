@@ -35,6 +35,7 @@
 + yazi : `sudo pacman -S yazi ffmpegthumbnailer unarchiver jq poppler fd ripgrep fzf zoxide`
 + ranger : Arch wiki
 + tock : terminal digital clock
++ uwufetch : https://github.com/ad-oliviero/uwufetch
 + gnome-clocks : Arch wiki
 + thunar : Arch wiki
 + swaylock : Arch wiki
