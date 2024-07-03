@@ -5,7 +5,7 @@
 
 ![swappy-20240703-130115](https://github.com/notsuju/legendary-bassoon/assets/131643792/3fc5e97c-1917-4096-9dfa-04664c1bd830)
 
-![swappy-20240703-132605](https://github.com/notsuju/legendary-bassoon/assets/131643792/3445e83a-3575-4167-8bf5-29091257238d)
+![swappy-20240703-134550](https://github.com/notsuju/legendary-bassoon/assets/131643792/b5c0e629-f213-4306-9bb5-56dd6365bf41)
 
 ![swappy-20240627-121523](https://github.com/notsuju/legendary-bassoon/assets/131643792/59f82dd3-2515-49a8-9792-2088231d23f2)
 
