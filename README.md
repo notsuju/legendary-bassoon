@@ -51,6 +51,8 @@
 + Cmake
 + ncmpcpp and mpd : Arch wiki
 + bluez and bluez-utils : Arch wiki(bluetoothctl)
++ htop
++ spotdl
 
 ## Update
 
