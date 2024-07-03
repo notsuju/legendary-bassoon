@@ -1,17 +1,14 @@
 # legendary-bassoon
 ## Screenshots
 
-![swappy-20240625-120003](https://github.com/notsuju/legendary-bassoon/assets/131643792/81ff1886-15c4-4a40-b439-445ea364f7be)
+![swappy-20240703-130511](https://github.com/notsuju/legendary-bassoon/assets/131643792/d5354832-8669-4351-8837-329d3de3c54e)
 
-![swappy-20240627-121523](https://github.com/notsuju/legendary-bassoon/assets/131643792/15d15130-7453-423f-86ef-5d9a956b46d0)
+![swappy-20240703-130115](https://github.com/notsuju/legendary-bassoon/assets/131643792/3fc5e97c-1917-4096-9dfa-04664c1bd830)
 
-![swappy-20240625-120602](https://github.com/notsuju/legendary-bassoon/assets/131643792/f7d499b3-3c73-40e2-9bf1-2acd1299fd83)
+![swappy-20240627-121523](https://github.com/notsuju/legendary-bassoon/assets/131643792/59f82dd3-2515-49a8-9792-2088231d23f2)
 
-![swappy-20240625-121703](https://github.com/notsuju/legendary-bassoon/assets/131643792/b3ac56e7-ac9c-4a23-96ed-91df8b910759)
+![swappy-20240627-122837](https://github.com/notsuju/legendary-bassoon/assets/131643792/0ca3ddb9-3daf-48a8-b199-dcf4c110ea41)
 
-![swappy-20240625-122101](https://github.com/notsuju/legendary-bassoon/assets/131643792/cccd2534-37df-4d0b-8458-e6c4d0967e30)
-
-![swappy-20240625-121524](https://github.com/notsuju/legendary-bassoon/assets/131643792/01c5ef22-d13f-4653-97b8-02f5ef49014f)
 
 ## Programs used
 
