@@ -55,4 +55,4 @@
 ## Update
 
 + Using `pacman -Syu`
-+ Using `yay`
+
