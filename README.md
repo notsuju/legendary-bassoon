@@ -14,7 +14,7 @@
 ![swappy-20240703-140536](https://github.com/notsuju/legendary-bassoon/assets/131643792/12aff7bf-f999-4a9f-9867-b88d3f5b178b)
 
 
-## Packages(this is just for me so I remmember what to download)
+## Packages(this is just for me so I remember what to download)
 
 + Spicetify : Arch wiki (https://spicetify.app/docs/advanced-usage/installation/)
 + Firefox
