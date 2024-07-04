@@ -56,6 +56,9 @@
 + bluez and bluez-utils : Arch wiki(bluetoothctl)
 + htop
 + spotdl
++ cbonsai
++ cowsay
++ cmatrix
 
 ## Update
 
