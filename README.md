@@ -17,6 +17,7 @@
 ## Packages(this is just for me so I remember what to download)
 
 + Spicetify : Arch wiki (https://spicetify.app/docs/advanced-usage/installation/)
++ Asus screenpad support : https://github.com/Plippo/asus-wmi-screenpad
 + Firefox
 + Pywal : Arch wiki
 + Steam : Arch wiki
