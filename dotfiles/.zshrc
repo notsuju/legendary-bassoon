@@ -53,13 +53,15 @@ source ~/powerlevel10k/powerlevel10k.zsh-theme
 PATH=/root/.local/bin:/snap/bin:/usr/sandbox/:/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games:/usr/share/games:/usr/local/sbin:/usr/sbin:/sbin:/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games
 
 # Manual aliases
-alias ll='lsd -lh --group-dirs=first'
 alias la='lsd -la --group-dirs=first'
 alias l='lsd --group-dirs=first'
 alias lla='lsd -lha --group-dirs=first'
 alias ls='lsd --group-dirs=first'
 alias cat='bat'
 alias cl='clear'
+alias nvims='nvim $(fzf -m --preview="bat --color=always {}")'
+alias ll='ls -latr'
+
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
@@ -130,3 +132,6 @@ cat ~/.cache/wal/sequences
 source ~/.cache/wal/colors-tty.sh
 
 export PATH=$PATH:/home/suju/.spicetify
+# Set up fzf key bindings and fuzzy completion
+source <(fzf --zsh)
+
