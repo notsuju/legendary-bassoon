@@ -65,4 +65,10 @@
 ## Update
 
 + Using `pacman -Syu`
++ How to change swaylock and sddm wallpaper.
++ For swaylock just go to the binds config of hypr and change the wallpaper path
++ FOr sddm follow steps
+  1. Go the config sddm and theme config and change the wallpaper path
+  2. cp wallpaper /usr/share/sddm/themes/Sugar-Candy/Backgounds/
+  3. Go to /usr/share/sddm/themes/ and change the background path in the thene config while in root
 
