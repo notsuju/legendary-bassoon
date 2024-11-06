@@ -65,6 +65,7 @@
 ## Update
 
 + Using `pacman -Syu`
++ Use nwg-look for setting up displays
 + How to change swaylock and sddm wallpaper.
 + For swaylock just go to the binds config of hypr and change the wallpaper path
 + FOr sddm follow steps
