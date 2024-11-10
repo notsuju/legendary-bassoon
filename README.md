@@ -61,6 +61,12 @@
 + cbonsai
 + cowsay
 + cmatrix
++ ncdu for managing files
++ cursor code editor of choice
++ nwg display for managing monitors
++ ncmpcpp
++ Zathura with mupdf for pdf
++ themix
 
 ## Update
 
