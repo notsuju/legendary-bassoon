@@ -67,6 +67,7 @@
 + ncmpcpp
 + Zathura with mupdf for pdf
 + themix
++ Lazygit
 
 ## Update
 
