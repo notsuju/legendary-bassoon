@@ -68,6 +68,7 @@
 + Zathura with mupdf for pdf
 + themix
 + Lazygit
++ qalculate-gtk (use qalc for tui function)
 
 ## Update
 
